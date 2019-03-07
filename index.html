@@ -33,7 +33,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
 <!-- Scroll Button -->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up w3-large"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-left w3-small"></i></button>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -157,9 +157,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- End Left Column -->
     </div>
 
-    <!-- Right Column -->
-        <div class="w3-margin-right w3-display-bottomright">
+
+
+    <!-- next 2/3 section starts  Right Column -->
+    <div class="w3-twothird">
+
+      <div align="left" id="tocList" class="w3-margin-right w3-display-bottomright" style="position:fixed; top:300px; right:5px; opacity: 0.5">
+      <div style="background-color: red;width:15px;" onclick="hideRightList()"><font  color="white"><b>X</b></font>
+      </div>
       <nav align="left" class="toc toc-right js-toc pa4 w3-white w3-text-teal w3-card-4 w3-``margin-top"">
+
         <ol class="toc-list ">
             <li class="toc-list-item">
               <a href="#WorkExperience" class="toc-link ">Work Experience</a>
@@ -172,6 +179,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             </li>
             <li class="toc-list-item">
               <a href="#awards" class="toc-link">Awards</a>
+            </li>
+            <li class="toc-list-item">
+              <a href="#publications" class="toc-link">Publications</a>
             </li>
             <li class="toc-list-item">
               <a href="#projects" class="toc-link">Projects</a>
@@ -179,28 +189,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </ol>
       </nav>
     </div>
-    <div class="w3-twothird">
 
-      <!-- TOC -->
-<!--       <nav align="left" class="toc toc-right js-toc relative pa4 is-position-fixed">
-        <ol class="toc-list ">
-            <li class="toc-list-item">
-              <a href="#WorkExperience" class="toc-link ">Work Experience</a>
-            </li>
-            <li class="toc-list-item">
-              <a href="#education" class="toc-link">Education</a>
-            </li>
-            <li class="toc-list-item">
-              <a href="#ceritfications" class="toc-link">Ceritfications</a>
-            </li>
-            <li class="toc-list-item">
-              <a href="#awards" class="toc-link">Awards</a>
-            </li>
-            <li class="toc-list-item">
-              <a href="#projects" class="toc-link">Projects</a>
-            </li>
-        </ol>
-      </nav> -->
 
       <!-- Work Experience -->
       <br>
