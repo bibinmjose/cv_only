@@ -32,7 +32,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class="w3-content w3-``margin-top" style="max-width:1400px;">
 
 <!-- Scroll Button -->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-minus-square w3-xxlarge"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-minus-square w3-xxlarge" style="padding:0px;"></i></button>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -161,11 +161,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- next 2/3 section starts  Right Column -->
     <div class="w3-twothird">
-
-    <div align="left" id="tocList" class="w3-margin-right w3-display-bottomright" style="position:fixed; top:300px; right:5px; opacity: 0.9">
-      <div align="left" onclick="hideRightList()"><i class="fa fa-times-circle w3-text-teal w3-large"></i>
-      </div>
-      <nav align="right" class="toc toc-right js-toc pa4 w3-white w3-text-teal w3-card-4 w3-``margin-top"">
+      
+    <div align="left" id="closebutton" class="w3-margin-right w3-display-bottomright" style="z-index: 5; position:fixed; top:300px; right:130px; opacity: 0.9;display: none;" onclick="hideRightList()">
+      <i class="fa fa-times-circle w3-text-black w3-large"></i>
+    </div>
+    
+    <div align="left" id="tocList" class="w3-margin-right w3-display-bottomright" style="position:fixed; top:300px; right:5px; opacity: 0.9;display: none;">
+      
+      <nav align="right" class="toc toc-right js-toc pa4 w3-white w3-text-teal w3-card-4 w3-``margin-top" style="padding: 10px">
 
         <ol class="toc-list ">
             <li class="toc-list-item">
